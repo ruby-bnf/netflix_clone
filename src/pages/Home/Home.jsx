@@ -1,24 +1,23 @@
 import React from "react";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
-import hero_banner from "../../assets/hero_banner.jpg";
-import hero_title from "../../assets/hero_title.png";
 import play_icon from "../../assets/play_icon.png";
 import info_icon from "../../assets/info_icon.png";
 import TitleCards from "../../components/TitleCards/TitleCards";
+import kdh_hero_banner from "../../assets/kdh_hero_banner.jpg";
+import kdh_hero_title from "../../assets/kdh_hero_title.png";
 
 const Home = () => {
   return (
     <div className="home">
       <Navbar />
       <div className="hero">
-        <img src={hero_banner} className="banner-img" />
+        <img src={kdh_hero_banner} className="banner-img" />
         <div className="hero-caption">
-          <img src={hero_title} className="caption-img" />
+          <img src={kdh_hero_title} className="caption-img" />
           <p>
-            Discovering his ties to a secret ancient order, a young man living
-            in modern Istanbul embarks on a quest to save the city from an
-            immortal enemy.
+            A K-pop girl group must harness the power of their music to protect
+            the world from demons in this action-packed animated adventure.
           </p>
           <div className="hero-btns">
             <button className="btn">
