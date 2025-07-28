@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import search_icon from "../../assets/search_icon.svg";
@@ -7,8 +7,20 @@ import profile_img from "../../assets/profile_img.png";
 import caret_icon from "../../assets/caret_icon.svg";
 
 const Navbar = () => {
+  const [bgColor, setBgColor] = useState(false);
+
+  const changeBgColor = () => {
+    if (window.scrollY >= 90) {
+      setBgColor(true);
+    } else {
+      setBgColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBgColor);
+
   return (
-    <div className="navbar">
+    <div className={bgColor ? "navbar navbar-darkBg" : "navbar"}>
       <div className="navbar-left">
         <img src={logo} alt=""></img>
         <ul>
