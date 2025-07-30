@@ -15,7 +15,7 @@
   background: rgba(0, 0, 0, 0.75);
   border-radius: 4px;
   padding: 60px;
-  padding: auto;
+  margin: auto;
 }
 
 .login-form h1 {
